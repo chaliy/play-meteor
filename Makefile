@@ -5,3 +5,8 @@ restore:
 
 dev:
 	meteor
+
+docker:
+	docker build -t play-meteor .
+	docker tag play-meteor chaliy/play-meteor:latest
+	docker push chaliy/play-meteor:latest
